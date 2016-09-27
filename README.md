@@ -1,3 +1,5 @@
+![Brutal](https://github.com/mijustin/brutal-theme/blob/master/brutal-logo.png)
+
 # Brutal theme
 A brutalist WordPress theme
 
