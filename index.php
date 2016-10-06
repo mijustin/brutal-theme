@@ -31,7 +31,7 @@
     <?php bloginfo('name'); ?>
   </h1>
   <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-  <p style="margin-top:0;"><em>Hi! I'm <a href="https://twitter.com/mijustin">@mijustin</a>. I want to help you reach more people with the things you create.</em></p>
+  <p style="margin-top:0;"><img src="https://justinjackson.ca/wp-content/themes/text/favicon.ico" alt="JJ"> <em>Hi! I'm <a href="https://twitter.com/mijustin">@mijustin</a>. I want to help you reach more people with the things you create.</em></p>
 </header>
 <?php } ?>
 <article<?php if(is_single()) { ?> class="red"<?php } ?>>
