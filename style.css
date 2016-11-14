@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* CSS Document */
+
 /*
 Theme Name: Brutal Theme
 Theme URI: https://justinjackson.ca
@@ -18,103 +21,79 @@ body {
 	font-size:16px;
 	line-height:1.6em;
 	max-width:46em;
-	padding: 2em 6em;
+        padding: 2em 2em;
 }
-
 header, article, footer {
 	max-width: 600px;
 }
-
-
 .home article, .page article {
 	max-width: 600px;
 }
-
 .single article {
 }
-
 h1 {
 	font-size: 1.5em;
 }
-
 h2 {
 	font-size: 1.2em;
 	line-height: 1.6em;
 }
-
 h3 {
 	font-size:1em;
 }
-
 p {
-	    margin:1.75em 0;
+	margin:1.75em 0;
 }
-
-p,
-article ul li,
-article ol li {
-    font-size: 16px;
-    line-height: 1.6em;
+p, article ul li, article ol li {
+	font-size: 16px;
+	line-height: 1.6em;
 }
-
 article {
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 }
-
 small, .wp-caption-text {
 	display: block;
 	padding-bottom: 23px;
 	font-size: 14px;
 	opacity: .5;
 }
-
 ul, ol {
 }
 li {
 }
-
 article ul, article ol {
 	margin-left: 47px;
 	margin-top: 1.75em;
 	margin-bottom: 1.75em;
 	line-height: 1.34;
 }
-
 article ul li {
 	padding-bottom: 14px;
 	list-style: square;
 }
-
 article ol li {
 	padding-bottom: 14px;
 	list-style: decimal;
 }
-
 img {
 	max-width: 100%;
 }
-
 blockquote {
 	margin: 0 0 23px -23px;
 	padding-left: 23px;
 	color: #990000;
 	border-left: 2px solid #990000;
 }
-
 article blockquote p {
 	padding-bottom: 0;
 }
-
 cite {
 }
-
 hr {
 	margin: 23px auto 46px auto;
 	width: 25%;
 	border-top: 4px solid rgba(77, 77, 77, .15);
 }
-
-
 a.button {
 	padding: 10px;
 	background-color: rgba(248, 89, 49, 1);
@@ -123,7 +102,6 @@ a.button {
 	margin-top: 20px;
 	border-radius: 10px;
 }
-
 /* = menu ----------------------- */
 
 .menu {
@@ -143,10 +121,9 @@ a.button {
 .menu li:first-child {
 	padding: 5px 20px 5px 0;
 }
-
 .menu-footer-container {
-    border-top: 1px solid #ccc;
-    padding-top: 8px;
+	border-top: 1px solid #ccc;
+	padding-top: 8px;
 
 /* = forms ----------------------- */
 
@@ -162,7 +139,6 @@ input[type="submit"], button {
 	color: rgba(255, 255, 255, 1);
 	padding: 5px 20px;
 }
-
 /* = common ----------------------- */
 
 .alignleft {
@@ -199,45 +175,17 @@ input[type="submit"], button {
 }
 .bypostauthor {
 }
-
 /* - Hide social sharing buttons. */
 .sharedaddy {
-    display: none;
+	display: none;
 }
 
 
 /* = media queries ----------------------- */
 
-@media screen and (max-height: 700px) {
- body {
-margin-top: 30px;
+@media screen and (max-width: 800px) {
+body {
+    padding: 2em 0;
 }
-}
- @media screen and (max-width: 800px) {
- body {
-margin: 20px;
-padding: 2em 0;
-}
- header, article, footer {
-max-width: 100%;
-}
- blockquote {
-margin: 0 0 23px 23px;
-}
- .menu {
-font-size: 20px;
-line-height: 1.8;
-}
- .menu ul {
-padding: 10px;
- list-style-type: none;
-list-style-image: none;
-}
- .menu li {
-display: block;
-padding: 0
-}
- .menu li:first-child {
-padding: 0
 }
 }
