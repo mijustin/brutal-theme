@@ -1,7 +1,7 @@
 /*
-Theme Name: Brutal Theme 
+Theme Name: Brutal Theme
 Theme URI: https://justinjackson.ca
-Version: 0.09
+Version: 0.10
 Description: Brutalist theme.
 Author: Justin Jackson
 Author URI: https://justinjackson.ca
@@ -15,10 +15,10 @@ Tags: one-column, fixed-width, light, right-sidebar, flexible-width, custom-menu
 
 body {
 	font-family: 'Roboto Mono', monospace;
-	font-size:14px;
-	line-height:1.75;
+	font-size:16px;
+	line-height:1.6em;
 	max-width:46em;
-	padding:2em;
+	padding: 2em 6em;
 }
 
 header, article, footer {
@@ -39,7 +39,7 @@ h1 {
 
 h2 {
 	font-size: 1.2em;
-	line-height: 1.2em;
+	line-height: 1.6em;
 }
 
 h3 {
@@ -47,7 +47,18 @@ h3 {
 }
 
 p {
-	margin:1.75em 0;
+	    margin:1.75em 0;
+}
+
+p,
+article ul li,
+article ol li {
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+article {
+    padding-bottom: 10px;
 }
 
 small, .wp-caption-text {
@@ -132,6 +143,11 @@ a.button {
 .menu li:first-child {
 	padding: 5px 20px 5px 0;
 }
+
+.menu-footer-container {
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+
 /* = forms ----------------------- */
 
 form {
@@ -184,6 +200,11 @@ input[type="submit"], button {
 .bypostauthor {
 }
 
+/* - Hide social sharing buttons. */
+.sharedaddy {
+    display: none;
+}
+
 
 /* = media queries ----------------------- */
 
@@ -195,6 +216,7 @@ margin-top: 30px;
  @media screen and (max-width: 800px) {
  body {
 margin: 20px;
+padding: 2em 0;
 }
  header, article, footer {
 max-width: 100%;
