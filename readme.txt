@@ -1,6 +1,7 @@
-== BRUTAL THEME ==
+== TEXT THEME ==
 
 * forked and maintained by Justin Jackson http://justinjackson.ca
+* originally created by Paul Jarvis http://pjrvs.com
 
 == SETUP ==
 
