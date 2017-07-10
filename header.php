@@ -1,9 +1,3 @@
-<?php
-	$ga = get_theme_mod( 'ga_setting' );
-	$bback = get_theme_mod( 'back_setting' );
-	$abt = get_theme_mod( 'abt_setting' );
-	$donext = get_theme_mod( 'donext_setting' );
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 
@@ -46,3 +40,4 @@
 	  <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 	  <p style="margin-top:0;"><img src="https://justinjackson.ca/wp-content/themes/text/favicon.ico" alt="JJ"> <em>Hi! I'm <a href="https://twitter.com/mijustin">@mijustin</a>. I help businesses with <a href="https://tinymarketingwins.com">product marketing</a>. You can text me here: +1-424-247-5762</em></p>
 	</header>
+ <?php } ?>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<article<?php if(is_single()) { ?> class="red"<?php } ?>>
+<article>
 		<?php
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
 

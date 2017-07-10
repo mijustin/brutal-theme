@@ -10,8 +10,6 @@
 
 <?php the_content(); ?>
 
-<small>Written by <a href="/?page_id=<?php echo $abt; ?>">
-<?php the_author(); ?>
-</a> on
+<small>Published on
 <?php the_time('F j, Y'); ?>
 </small>
