@@ -32,11 +32,11 @@
 	<?php wp_head();?>
 
 	<body <?php body_class(); ?>>
-	<?php if ( !(is_single() || is_page()) ) { ?>
 	<header id="top" class="clearfix">
+	<?php if ( !(is_single() || is_page()) ) { ?>
 	  <h1>
 	    <?php bloginfo('name'); ?>
 	  </h1>
+  <?php } ?>
 	  <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 	</header>
- <?php } ?>
