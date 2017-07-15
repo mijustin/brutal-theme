@@ -84,3 +84,10 @@ function ttext_customize ($wp_customize) {
 return $wp_customize;
 
 }
+
+function unfurl_og_image($img_src) {
+    if ( has_post_thumbnail() && $large_thumbnail_url = get_the_post_thumbnail(null, 'large') ) {
+        return $large_thumbnail_url;
+  }
+  return $img_src;
+}

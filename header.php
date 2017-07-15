@@ -10,7 +10,7 @@
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="<?php echo the_permalink(); ?>"/>
 	<meta property="og:site_name" content="<?php echo get_bloginfo(); ?>"/>
-	<meta property="og:image" content="<?php echo !empty($feature_image) ? $feature_image : $img_src; ?>"/>
+  <meta property="og:image" content="<?php echo unfurl_og_image($img_src); ?>"/>
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content=“@mijustin">
@@ -18,8 +18,8 @@
 	<meta name="twitter:domain" content="https://justinjackson.ca">
 	<meta name="twitter:title" content="<?php echo the_title(); ?>">
 	<meta name="twitter:description" content="<?php echo $excerpt; ?>">
-	<meta name="twitter:image" content="<?php echo $img_src; ?>">
-	<meta itemprop="image" content="<?php echo $img_src; ?>">
+	<meta name="twitter:image" content="<?php echo unfurl_og_image($img_src); ?>"/>
+	<meta itemprop="image" content="<?php echo unfurl_og_image($img_src); ?>"/>
 
 	<title>
 		<?php if (is_home () ) { bloginfo('name'); echo ' | '; bloginfo('description'); } elseif ( is_category() ) { single_cat_title();  } elseif (is_single() ) { single_post_title(); } elseif (is_page() ) { single_post_title(); } else { wp_title('',true); } ?>
