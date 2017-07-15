@@ -10,7 +10,7 @@
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="<?php echo the_permalink(); ?>"/>
 	<meta property="og:site_name" content="<?php echo get_bloginfo(); ?>"/>
-  <meta property="og:image" content="<?php echo unfurl_og_image($img_src); ?>"/>
+	<meta property="og:image" content="<?php echo unfurl_og_image($img_src); ?>"/>
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content=“@mijustin">
