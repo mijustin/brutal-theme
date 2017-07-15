@@ -6,25 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta property="og:title" content="<?php the_title(); ?>"/>
-	<meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
-	<meta property="og:url" content="<?php the_permalink(); ?>"/>
-	<?php $fb_image = wp_get_attachment_image_src(get_post_thumbnail_id( get_the_ID() ), 'thumbnail'); ?>
-	<?php if ($fb_image) : ?>
-		<meta property="og:image" content="<?php echo $fb_image[0]; ?>" />
-	<?php endif; ?>
-	<meta property="og:type" content="<?php
-		if (is_single() || is_page()) { echo "article"; } else { echo "website";} ?>"
-	/>
-	<meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
-
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content=“@mijustin">
-	<meta name="twitter:creator" content="@mijustin">
-	<meta name="twitter:domain" content="https://justinjackson.ca">
-	<meta name="twitter:title" content="<?php echo the_title(); ?>">
-	<meta name="twitter:description" content="<?php echo $excerpt; ?>">
-
 	<title>
 		<?php if (is_home () ) { bloginfo('name'); echo ' | '; bloginfo('description'); } elseif ( is_category() ) { single_cat_title();  } elseif (is_single() ) { single_post_title(); } elseif (is_page() ) { single_post_title(); } else { wp_title('',true); } ?>
 	</title>
