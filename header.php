@@ -17,6 +17,7 @@
 	<?php wp_head();?>
 
 	<body <?php body_class(); ?>>
+	<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 	<header id="top" class="clearfix">
 	<?php if ( !(is_single() || is_page()) ) { ?>
 	  <h1>
