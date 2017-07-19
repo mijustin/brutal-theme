@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>
-	<?php if (is_home () ) { bloginfo('name'); echo ' | '; bloginfo('description'); } elseif ( is_category() ) { single_cat_title();  } elseif (is_single() ) { single_post_title(); } elseif (is_page() ) { single_post_title(); } else { wp_title('',true); } ?>
+	  <?php if (is_home () ) { bloginfo('name'); echo ' | '; bloginfo('description'); } elseif ( is_category() ) { single_cat_title();  } elseif (is_single() ) { single_post_title(); } elseif (is_page() ) { single_post_title(); } else { wp_title('',true); } ?>
 	</title>
 	<link href="<?php echo get_bloginfo( 'template_directory' );?>/style.css" rel="stylesheet">
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo_rss('name'); ?>" href="<?php bloginfo_rss('atom_url') ?>">
